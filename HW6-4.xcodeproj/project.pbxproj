@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		2D30B6502603F576004AFFFB /* HW6-4 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "HW6-4"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D30B6532603F576004AFFFB /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		2D30B66026052567004AFFFB /* json.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = json.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				2D30B6532603F576004AFFFB /* main.cpp */,
+				2D30B66026052567004AFFFB /* json.hpp */,
 			);
 			path = "HW6-4";
 			sourceTree = "<group>";
