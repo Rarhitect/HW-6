@@ -1,4 +1,0 @@
-ABCDEFGHIJKLM
-NOPQRSTUVWXYZ
-abcdefghijklm
-nopqrstuvwxyz

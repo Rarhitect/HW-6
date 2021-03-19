@@ -26,7 +26,7 @@ int main(int argc, const char * argv[])
     std::cout << "Insert string number: ";
     std::cin >> string_number;
     
-    if((string_number > string_quantity) and (string_number < 0))
+    if((string_number > string_quantity) || (string_number < 0))
     {
         std::cout << "File doesn't have that number" << std::endl;
         exit(1);
@@ -47,13 +47,22 @@ int main(int argc, const char * argv[])
         }
         o_f << std::endl;
     }
-
+    
     std::ifstream i_f(filename);
-    i_f.seekg(string_number, std::ios::beg);
+    
+    if(string_number > 1)
+    {
+        i_f.seekg((string_number - 1) * (string_length + 1));
+    }
+    else
+    {
+        i_f.seekg(0);
+    }
     
     std::string destination_string;
     std::getline(i_f, destination_string);
     std::cout << "Your destination string is:" << std::endl << destination_string << std::endl;
+    
     
     return 0;
 }
